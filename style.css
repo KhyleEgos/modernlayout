@@ -1,0 +1,68 @@
+*{
+    margin: 5px;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+}
+body{
+    background-color: yellow;
+}
+    .container {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap:10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". blogspot ."
+          "box1 box2 box3"
+          "box4 box5 box6";
+        flex-wrap: wrap;
+      }
+      
+      .blogspot { 
+        grid-area: blogspot;
+        background-color: white;
+        border: 3px solid;
+        height: 50px;
+    }
+    .blogspot{
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }  
+      .box1 {
+         grid-area: box1;
+         background-color: white;
+         border: 3px solid;
+         padding: 10px;
+    }
+      
+      .box2 {
+        grid-area: box2;
+        background-color: white;
+        border: 3px solid;
+        padding: 10px;
+    }
+      
+      .box3 { grid-area: box3; 
+        background-color: white;
+        border: 3px solid;
+        padding: 10px;
+    }
+      
+      .box4 { grid-area: box4;
+        background-color: white;
+        border: 3px solid;
+        padding: 10px;
+     }
+      
+      .box5 { grid-area: box5; 
+        background-color: white;
+        border: 3px solid;
+        padding: 10px;}
+      
+      .box6 { grid-area: box6; background-color: white;
+        border: 3px solid;
+        padding: 10px;
+    }
+      
